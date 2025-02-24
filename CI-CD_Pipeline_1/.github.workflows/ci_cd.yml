@@ -1,0 +1,27 @@
+name: operation_arrays.js CI_CD
+
+on: [push, pull request]
+
+
+jobs:
+  build:
+    runs-on: ${{matrix.os}}
+
+  strategy:
+    name: Checkout repository
+    os: [ubuntu-latest, windows-latest, macos-latest]
+  
+  steps:
+    name: Checkout repository
+    users:actions/checkout@v2
+
+    name: Set up Node.js
+    users: actions/setup-node@v2
+    with: 
+      node-version: '14'
+
+    name: Install dependencies
+    run: nom install
+
+    name: run tests
+    run: npm test
