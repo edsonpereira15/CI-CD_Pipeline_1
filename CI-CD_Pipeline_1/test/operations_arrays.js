@@ -10,7 +10,7 @@ for (i = 0; i< A.length &&  i < B.length; i++){
   C[i] = A[i] + B[i];
 }
 
-window.alert(C);
+window.alert("As somas dos elementos presentes em A e e B são:"+'\n'C);
 
 //Exec 5
 
