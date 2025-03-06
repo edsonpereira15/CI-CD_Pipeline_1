@@ -10,7 +10,7 @@ for (i = 0; i< A.length &&  i < B.length; i++){
   C[i] = A[i] + B[i];
 }
 
-alert(C);
+window.alert(C);
 
 //Exec 5
 
@@ -32,4 +32,4 @@ for (i = 0; ; i++) {
   }
 }
 
-alert("Os números digitados foram: "+arrMaior+".\n O maior número digitado foi: "+nMaior);
+window.alert("Os números digitados foram: "+arrMaior+".\n O maior número digitado foi: "+nMaior);
