@@ -16,5 +16,4 @@ jobs:
     - name: Run tests
       run: npm test
            CI=true npm test
-    - name: Deploy to Vercel
-      run: npx vercel deploy --prod
+   
