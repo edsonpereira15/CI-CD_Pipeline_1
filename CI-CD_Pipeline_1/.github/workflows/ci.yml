@@ -3,7 +3,7 @@ name: Node.js CI
 on: [push, pull_request]
 
 jobs:
-  build:
+  build-and-test:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
@@ -11,6 +11,5 @@ jobs:
         run: npm install
         working-directory: ./CI-CD-Pipeline-Component
       - name: Run tests
-        run: npm run build
-             npm test
+        run:  npm test
         working-directory: ./CI-CD-Pipeline-Component
